@@ -44,7 +44,7 @@ define Package/nodejs/description
 endef
 
 define Package/nodejs-npm
-  SUBMENU:=Node.js
+  SUBMENU:=Node.js7.x
   SECTION:=net
   CATEGORY:=Network
   TITLE:=Node Package Manager ${PKG_VERSION}
