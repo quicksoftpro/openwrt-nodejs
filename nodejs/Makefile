@@ -14,7 +14,7 @@ PKG_RELEASE:=0
 PKG_SOURCE:=node-v$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://nodejs.org/dist/v$(PKG_VERSION)/
 PKG_MD5SUM:=153bdbf77b4473df2600b8ce123ef331
-	 
+
 
 PKG_BUILD_DEPENDS:=nodejs/host
 
@@ -29,14 +29,14 @@ define Package/nodejs
   SUBMENU:=Node.js
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=Node.js Evented I/O for V8 JavaScript
+  TITLE:=Node.js ${PKG_VERSION} Evented I/O for V8 JavaScript
   URL:=http://nodejs.org
-  MAINTAINER:=Xin Ouyang <xinpascal@gmail.com>
+  MAINTAINER:=avanish ojha <avanish.ojha@quicksoftpro.com>
   DEPENDS:=@armeb||@arm||@i386 +libstdcpp +libpthread +librt +libopenssl
 endef
 
 define Package/nodejs/description
- Node.js is a platform built on Chrome's JavaScript runtime for easily
+ Node.js ${PKG_VERSION} is a platform built on Chrome's JavaScript runtime for easily
  building fast, scalable network applications. Node.js uses an event-driven,
  non-blocking I/O model that makes it lightweight and efficient, perfect
  for data-intensive real-time applications that run across distributed
@@ -47,9 +47,9 @@ define Package/nodejs-npm
   SUBMENU:=Node.js
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=Node Package Manager
+  TITLE:=Node Package Manager ${PKG_VERSION}
   URL:=https://npmjs.org
-  MAINTAINER:=Xin Ouyang <xinpascal@gmail.com>
+  MAINTAINER:=Avanish Ojha <avanish.ojha@quicksoftpro.com>
   DEPENDS:=@armeb||@arm||@i386 +libstdcpp +libpthread +librt +libopenssl
 endef
 
